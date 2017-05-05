@@ -408,8 +408,8 @@ extension SideMenuTransition: UIViewControllerAnimatedTransitioning {
         // prevent any other menu gestures from firing
         container.isUserInteractionEnabled = false
         
-        if let menuBackgroundColor = SideMenuManager.menuAnimationBackgroundColor {
-            container.backgroundColor = menuBackgroundColor
+        if let menuContainerBackgroundColor = SideMenuManager.menuContainerBackgroundColor {
+            container.backgroundColor = menuContainerBackgroundColor
         }
         
         let fromViewController = transitionContext.viewController(forKey: UITransitionContextViewControllerKey.from)!

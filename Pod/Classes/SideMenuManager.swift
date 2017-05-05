@@ -88,6 +88,9 @@ open class SideMenuManager : NSObject {
     /// The background color behind menu animations. Depending on the animation settings this may not be visible. If `menuFadeStatusBar` is true, this color is used to fade it. Default is black.
     open static var menuAnimationBackgroundColor: UIColor?
     
+    /// The background color of the menu container. Set this property lead to flickering effect
+    open static var menuContainerBackgroundColor: UIColor?
+
     /// The shadow opacity around the menu view controller or existing view controller depending on the `menuPresentMode`. Default is 0.5 for 50% opacity.
     open static var menuShadowOpacity: Float = 0.5
     
